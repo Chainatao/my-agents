@@ -1,0 +1,30 @@
+services:
+  jitsi-web:
+    image: jitsi/web:stable
+    container_name: jitsi-web
+    restart: unless-stopped
+    ports:
+      - "8080:80"     # host port 8080 → container port 80
+      - "8443:443"    # host port 8443 → container port 443
+    environment:
+      - ENABLE_AUTH=false      # simple setup, disable authentication for now
+      - ENABLE_GUESTS=true
+    depends_on:
+      - jitsi-prosody
+      - jitsi-jicofo
+      - jitsi-jvb
+
+  jitsi-prosody:
+    image: jitsi/prosody:stable
+    container_name: jitsi-prosody
+    restart: unless-stopped
+
+  jitsi-jicofo:
+    image: jitsi/jicofo:stable
+    container_name: jitsi-jicofo
+    restart: unless-stopped
+
+  jitsi-jvb:
+    image: jitsi/jvb:stable
+    container_name: jitsi-jvb
+    restart: unless-stopped

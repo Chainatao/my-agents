@@ -1,0 +1,8 @@
+tell_joke:
+  description: >
+    Tell a joke about {topic} and push it to the user. 
+  expected_output: >
+    A very funny and profound joke about {topic}
+  agent: joker
+
+
