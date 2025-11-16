@@ -13,9 +13,19 @@ from langchain_community.utilities.wikipedia import WikipediaAPIWrapper
 
 
 load_dotenv(override=True)
-pushover_token = os.getenv("PUSHOVER_TOKEN")
-pushover_user = os.getenv("PUSHOVER_USER")
-pushover_url = "https://api.pushover.net/1/messages.json"
+telegram_token = os.getenv("TELEGRAM_NOTIFICATIONS_TOKEN")
+chat_id = os.getenv("TELEGRAM_NOTIFICATIONS_CHAT_ID")
+
+
+# @tool('send_push_notification')
+# def tool_push(message: str):
+#     """Useful for when you want to send a push notification.
+
+#     Keyword arguments:
+#     message -- The message to send.
+#     """
+#     return push(message)
+
 serper = GoogleSerperAPIWrapper()
 
 async def playwright_tools():
@@ -24,12 +34,13 @@ async def playwright_tools():
     toolkit = PlayWrightBrowserToolkit.from_browser(async_browser=browser)
     return toolkit.get_tools(), browser, playwright
 
-
 def push(text: str):
     """Send a push notification to the user"""
-    requests.post(pushover_url, data = {"token": pushover_token, "user": pushover_user, "message": text})
-    return "success"
-
+    url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"
+    response = requests.post(
+        url=url,
+        params={'chat_id': chat_id, 'text': f'{text}', 'parse_mode': 'Markdown'}
+    )
 
 def get_file_tools():
     toolkit = FileManagementToolkit(root_dir="sandbox")
