@@ -6,9 +6,8 @@ from mcp.server.fastmcp import FastMCP
 
 load_dotenv(override=True)
 
-pushover_user = os.getenv("PUSHOVER_USER")
-pushover_token = os.getenv("PUSHOVER_TOKEN")
-pushover_url = "https://api.pushover.net/1/messages.json"
+telegram_token = os.getenv("TELEGRAM_NOTIFICATIONS_TOKEN")
+chat_id = os.getenv("TELEGRAM_NOTIFICATIONS_CHAT_ID")
 
 
 mcp = FastMCP("push_server")
@@ -22,9 +21,11 @@ class PushModelArgs(BaseModel):
 def push(args: PushModelArgs):
     """Send a push notification with this brief message"""
     print(f"Push: {args.message}")
-    payload = {"user": pushover_user, "token": pushover_token, "message": args.message}
-    requests.post(pushover_url, data=payload)
-    return "Push notification sent"
+    url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"
+    response = requests.post(
+        url=url,
+        params={'chat_id': chat_id, 'text': f'{args.message}', 'parse_mode': 'Markdown'}
+    )
 
 
 if __name__ == "__main__":

@@ -1,27 +1,20 @@
 # Banoffee Pie Recipe
 
-## Ingredients
-- 4 bananas, sliced
-- 394g caramel or dulce de leche
-- 300ml double cream
-- Dark chocolate (optional)
+## Ingredients:
+- 1 1/2 cups crushed digestive biscuits
+- 6 tablespoons butter, melted
+- 1 can (14 ounces) dulce de leche or caramel sauce
+- 3 ripe bananas, sliced
+- 1 cup heavy whipping cream
+- 2 tablespoons powdered sugar
+- 1 teaspoon vanilla extract
+- Chocolate shavings or cocoa powder for garnish (optional)
 
-### For the pastry
-- 100g butter, chilled (plus extra for greasing)
-- 200g plain flour
-- 1 medium egg, separated
-- 1 tbsp golden caster sugar
-
-## Method
-1. Make the pastry case: Put butter and flour in a food processor and pulse until it resembles fresh breadcrumbs. Add egg yolk and sugar, pulse again, then add very cold water a tbsp at a time until dough comes together.
-2. Knead dough gently by hand until smooth ball forms. Wrap in cling film and chill for 30 minutes.
-3. Heat oven to 190C/170C fan/gas 4. Grease a 23cm loose bottomed fluted tart tin. Roll out pastry and line the tin, leaving about 0.5cm of pastry over the edge and snip to length.
-4. Line base with baking parchment and weigh down with baking beans/uncooked rice. Bake for 15 minutes. Remove parchment and beans, brush pastry with beaten egg white and bake another 15-20 minutes until golden and cooked. Cool completely.
-5. Spread half the caramel on the pastry case, layer bananas on top, then cover with remaining caramel. Chill in fridge.
-6. Whip the cream until thick and spoon over the tart. Grate dark chocolate over to garnish if using.
-
-## Notes
-- Serves 8-10.
-- Prep time: 30 minutes.
-- Cook time: 30-35 minutes.
-- An easy family favorite. Recommended to serve with a generous dollop of cream.
+## Instructions:
+1. Mix crushed digestive biscuits and melted butter; press into the base of a 9-inch pie dish. Chill in the refrigerator.
+2. Spread the dulce de leche or caramel sauce evenly over the biscuit base.
+3. Arrange banana slices over the caramel layer.
+4. In a mixing bowl, beat the heavy whipping cream with powdered sugar and vanilla extract until soft peaks form.
+5. Spread the whipped cream over the bananas.
+6. Garnish with chocolate shavings or a dusting of cocoa powder if desired.
+7. Chill the pie for at least 1-2 hours before serving.
